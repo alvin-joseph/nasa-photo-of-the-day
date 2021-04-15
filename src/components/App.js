@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>NASA Photo of the day!</h1>
+      <h1>NASA Photo of the Day!</h1>
       <img src={image.url} alt={`${image.title}`}></img>
       <Details image={image}/>
     </div>
