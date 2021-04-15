@@ -15,11 +15,6 @@
   pointer-events: none;
 }
 
-img {
-  height: 80vh;
-  width: 50%;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -37,19 +32,6 @@ img {
   color: white;
 }
 
-.App h1 {
-  color:white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 2px 3px 0 #000;
-}
-
-button {
-  width:150px;
-  margin:10px;
-  background-color:#282c34;
-  color:white;
-  padding:20px;
-}
 
 button:hover {
   cursor: pointer;

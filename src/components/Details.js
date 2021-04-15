@@ -1,6 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { BASE_URL, API_KEY } from '../constants/index';
 import axios from 'axios';
+import styled from 'styled-components'
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    width:150px;
+    margin:10px;
+    background-color:#282c34;
+    color:white;
+    padding:20px;
+
+    &:hover {
+      background-color: #353839;
+      transition: all .5s ease-in-out;
+    }
+    transition: all .5s ease-in-out;
+  }
+`
 
 export default function Details(props) {
     const [details, setDetails] = useState(null);
@@ -32,11 +54,11 @@ export default function Details(props) {
     
 
     return (
-        <div className='container'>
+        <Container>
           {details && (
             <>
               <h2>Title: {details.title}</h2>
-              <p>Copyright: {details.copyright}</p>
+              <p>Copyright: {details.copyright || 'n/a'}</p>
               <p>
                 Date: {details.date}
               </p>
@@ -49,6 +71,6 @@ export default function Details(props) {
           <div className='button-details'>
             <button onClick={() => openDetails(image)}>Show Details</button>
           </div>
-        </div>
+        </Container>
       );
 }
