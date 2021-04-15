@@ -1,5 +1,13 @@
+*{
+  background-color: gray;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -24,8 +32,28 @@
   color: white;
 }
 
+
+button:hover {
+  cursor: pointer;
+}
+
+.App .text {
+  width: 50%;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.explanation {
+  width:50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
